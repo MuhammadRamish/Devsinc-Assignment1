@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width-device-width, initial-scale=1.0"> 
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+
+.flex-container {
+  display: flex;
+  height:120%
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+a:link,a:visited,a:hover,a:active {
+  text-decoration: none;
+  color: rgb(0,0,100);
+}
+
+.button {
+  background-color: orange;
+  padding: 8px 8px;
+  text-align: center;
+  display: inline-block;
+}
+
+.flex-container > div {
+  margin: none;
+  text-align: center;
+  line-height: none;
+  font-size: 16px;
+}
+
+.flex-container > div:hover {
+  background-color:yellow;
+}
+
+.flex2 {
+  display: flex;
+  flex-wrap: nowrap;
+
+}
+
+.flex2 > div {
+
+  width: 50%;
+  margin: none;
+  text-align: left;
+  font-size: 30px;
+}
+
+ul {
+  list-style-type:none;
+  float:left;
+  padding:none;
+}
+
+li {
+  margin-bottom:15%;
+  text-align:left;
+}
+
+h1, div, p, pre, b, a{
+  text-align:center;
+  font-family: "Roboto",sans-serif;
+  color:rgb(0,0,100);
+}
+
+.borders {
+  padding:4px;
+  border: 2px rgb(242,242,242);
+  border-radius: 10px;
+  background-color:rgb(242,242,242);
+  content: "";
+  display: table;
+  clear: both;
+  float: right;
+}
+
+.column {
+  float: left;
+  width: 30%;
+  margin: 1.4%;
+  outline-style:solid; 
+  outline-color:white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
+}
+
+.column2 {
+  float: left;
+  width: 20%;
+}
+
+.column3 {
+  float: left; 
+  width:22%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.bg {
+  left: 0px; 
+  position: relative;
+  width:100%;
+  height:80%;
+  z-index:-1;
+  position:absolute;
+}
+
+@media screen and (max-width:700px) {
+  .column, .column3{
+    margin: 10%;
+    width: 90%;
+  }
+}
+
+
+@media screen and (max-width:700px) {
+  .bg{
+    height:350%;
+  }
+}
+
+
+
+</style>
+
+
+</head>
+<body>
+
+<div class="flex-container">
+  <div style="flex-grow: 6">
+	<a href="'default.asp'">
+	<img src="logo1.png" alt="Tralive logo" style="width:40%;height:60%">
+  </a>
+  </div>
+  <div style="font-size:90%;flex-grow: 1"><a href="#home">Home</a></div>
+  <div style="font-size:90%;flex-grow: 1"><a href="#events">Events</a></div>
+  <div style="font-size:90%;flex-grow: 1"><a href="#about">About</a></div>
+  <div style="font-size:90%;flex-grow: 1"><a href="#blog">Blog</a></div>
+  <div style="font-size:90%;flex-grow: 1"><a href="#contact">Contact</a></div>
+  <div class="button" style="font-size:90%;flex-grow:1"><a href="#contact" style="color:white;">+10 (67) 678 2567</a></div>
+</div>
+
+<h1 style="font-size:300%;"> Life long memories just a </h1> <h1 style="font-size:300%;"> few second away </h1>
+
+
+<p style="text-align:center; font-size:12px"> Let's start with your journey, your dream will come true </p>
+
+<div class="flex-container" style="justify-content: center; flex-direction:column;">
+  <img src="car.png" alt="Car" style="width:100%;height:auto">
+  <a href="#promotion" style="font-size:12px;"> Check our best promotional tour </a>
+  <h2> Upcoming Events </h2>
+</div>
+
+<div class="row">
+  <div class="column">
+    <img src="service3.png" alt="Spitzburg" style="width:100%;height:auto">
+	<br><br>	
+	<div class="row">
+  	  <b style="color:rgb(0,0,100);float:left;width:50%"> Spitzberg </b>
+	  <b style="color:dodgerblue;float:left;width:50%"> &#36;1200 </b>
+	</div>
+	<br><br>
+    <div class="row" style="font-size:12px;">
+  	  <div class="borders" style="margin-left:13%;color:dodgerblue;float:left;width:30%"> 12 Jan - 18 Jan </div>
+	  <div style="color:rgb(0,0,100);float:left;width:30%"> 5 days </div>
+	</div>
+  </div>
+
+  
+  <div class="column">
+    <img src="service2.png" alt="Mega Turkey" style="width:100%;height:auto">
+		<br><br>	
+	<div class="row">
+  	  <b style="color:rgb(0,0,100);float:left;width:50%"> Mega Turkey </b>
+	  <b style="color:dodgerblue;float:left;width:50%"> &#36;1200 </b>
+	</div>
+	<br><br>
+    <div class="row" style="font-size:12px;">
+  	  <div class="borders" style="margin-left:13%;color:dodgerblue;float:left;width:30%"> 12 Jan - 18 Jan </div>
+	  <div style="color:rgb(0,0,100);float:left;width:30%"> 5 days </div>
+	</div>
+  </div>
+  
+  <div class="column">
+    <img src="service1.png" alt="Mega Turkey" style="width:100%;height:auto">
+		<br><br>	
+	<div class="row">
+  	  <b style="color:rgb(0,0,100);float:left;width:50%"> Spitzberg </b>
+	  <b style="color:dodgerblue;float:left;width:50%"> &#36;1200 </b>
+	</div>
+	<br><br>
+    <div class="row" style="font-size:12px;">
+  	  <div class="borders" style="margin-left:13%;color:dodgerblue;float:left;width:30%"> 12 Jan - 18 Jan </div>
+	  <div style="color:rgb(0,0,100);float:left;width:30%"> 5 days </div>
+	</div>
+  </div>
+</div>
+
+
+<br><br><br><br><br><br>
+<br><br><br><br><br><br>
+<br><br><br><br><br><br>
+<br><br><br><br><br><br>
+
+<div class="flex2">
+  <div style="margin-left:10%;"> <img src="about.png" alt="About" style="width:80%;height:90%;"> </div>
+  <div style="width:30%;"> 
+    <p style="font-size:18px;text-align:left;margin-bottom:1px"> About us </p>
+	<h2> Get time for real <br> time adventure </h2>
+	<p style="font-size:18px;text-align:left;"> Let's
+	start your journey with us, your dream will come true. Loremipsum dolor sit amet,
+	consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+	magna aliqua. Ut enim ad minim veniam quis nostrud exercitation.</p>
+  </div>
+</div>
+
+
+
+<br><br><br><br><br><br>
+<br><br><br><br>
+
+
+
+<div class="flex-container" style="margin-bottom:0px;justify-content: center; flex-direction:column;">
+  <h2 style="margin-bottom:1px;"> What customers say </h2>
+  <p style="font-size:18px;text-align:center;width:50%"> Let's
+	start your journey with us, your dream will come true. Loremipsum dolor sit amet,
+	consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+	magna aliqua. Ut enim ad minim veniam quis nostrud exercitation.
+  </p>
+</div>
+
+<div class="flex-container" style="justify-content: center; flex-direction:row;">
+  <p> <img src="founder.png" alt="Mark Anthony" style="width:100%;height:auto"> </p>
+  <p> Mark Anthony <br> CEO of colorlib </p>
+</div>
+
+<br><br><br><br>
+<br><br><br><br>
+
+<div class="row">
+  <div class="column2">
+    <img src="insta5.png" alt="Spitzburg" style="width:100%;height:100%;">
+  </div>
+  
+  <div class="column2">
+    <img src="insta4.png" alt="Mega Turkey" style="width:100%;height:100%;">
+  </div>
+  
+  <div class="column2">
+    <img src="insta3.png" alt="Mega Turkey" style="width:100%;height:100%;">
+  </div>
+  
+  <div class="column2">
+    <img src="insta2.png" alt="Mega Turkey" style="width:100%;height:100%;">
+  </div> 
+
+  <div class="column2">
+    <img src="insta1.png" alt="Mega Turkey" style="width:100%;height:100%;">
+  </div>  
+</div>
+
+
+<img class="bg" src="blue.jpg">
+
+<br><br><br><br>
+
+<div class="row" style="z-index:1;position:absolute;">
+  <div class="column3" style="width:34%;">
+    <div class="row" style="margin-left:2%;">
+      <div> <img src="logo-white.png" alt="Mega Turkey" style="margin-left:10%;float:left;width:50%;height:50%;"> </div> <br><br><br><br><br><br>
+      <div style="margin-left:10%;font-size:110%;text-align:left;color:rgb(110,110,160);"> Land behold it created good saw after she'd Our set living. Signs midst dominion creepeth morning laboris nisi ufsit aliquip.</div>
+      <div class="container" style="margin:10%;text-align:left;">
+        <span><a href="https://www.twitter.com"><i class="fab fa-twitter-square" style="margin-right:5%;color:white;"></i></a></span>
+        <span><a href="https://www.facebook.com"><i class="fab fa-facebook-square" style="margin-right:5%;color:white;"></i></a></span>
+        <span><a href="https://www.youtube.com"><i class="fab fa-linkedin" style="margin-right:5%;color:white;"></i></a></span>
+        <span><a href="https://www.instagram.com"><i class="fab fa-pinterest-square" style="margin-right:5%;color:white;"></i></a></span>
+      </div>
+	</div>  
+  </div>
+  
+  <div class="column3">
+    <ul>
+      <li style="font-size:135%;color:white;"> Navigation </li>
+	  <li><a style="font-size:110%;color:rgb(110,110,160);" href="#home">Home</a></li>
+      <li><a style="font-size:110%;color:rgb(110,110,160);" href="#about">About</a></li>
+      <li><a style="font-size:110%;color:rgb(110,110,160);" href="#services">Services</a></li>
+      <li><a style="font-size:110%;color:rgb(110,110,160);" href="#blog">Blog</a></li>
+	  <li><a style="font-size:110%;color:rgb(110,110,160);" href="#contact">Contact</a></li>
+    </ul>  
+  </div>
+  
+  <div class="column3">
+    <ul>
+      <li style="font-size:135%;color:white;"> Services </li>
+	  <li><a style="font-size:110%;color:rgb(110,110,160);" href="#home">Blackforest</a></li>
+      <li><a style="font-size:110%;color:rgb(110,110,160);" href="#about">Bodhubon</a></li>
+      <li><a style="font-size:110%;color:rgb(110,110,160);" href="#services">Rongdhonu</a></li>
+      <li><a style="font-size:110%;color:rgb(110,110,160);" href="#blog">Megahrong</a></li>
+    </ul>  
+  </div>
+
+  <div class="column3">
+    <ul>
+      <li style="font-size:135%;color:white;"> Services </li>
+	  <li><a style="font-size:110%;color:rgb(110,110,160);" href="#home">76/A, Green Lane, NYC</a></li>
+      <li><a style="font-size:110%;color:rgb(110,110,160);" href="#about">demomail@gmail.com</a></li>
+      <li><a style="font-size:135%;color:rgb(255,165,0);" href="#services">+10(78)738-9083</a></li>
+    </ul>  
+  </div> 
+  <br><br><br><br>
+  <br><br><br><br>
+  <br><br><br><br>
+  <br><br><br><br>
+    
+<div class="column3" style="margin-left:10%;width:80%;font-size:110%;color:rgb(110,110,160);"> 
+  Copyright &#169;2021 All rights reserved | This template is made with by &#10084; <span style="color:rgb(255,165,0);">Colorlib</span> 
+</div>
+</div>
+</body>
+</html>
+
